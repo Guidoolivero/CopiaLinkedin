@@ -44,6 +44,16 @@ a{
     font-size: 0.9rem;
     margin: 5px 8px;
     padding-right: 5px;
+    position: relative;
+}
+
+.navbar-center ul li a::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #045be6;
+    position: absolute;
+    bottom: -15px;
 }
 
 .navbar-center ul li a img {
@@ -56,4 +66,20 @@ a{
     display: block;
     cursor: pointer;
     position: relative;
+}
+
+.online {
+    position: relative;
+}
+
+.online::after {
+    content: '';
+    width: 7px;
+    height: 7px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    right: 0px;
+    top: 0px;
+    background: #41db51;
+    position: absolute;
 }
